@@ -59,9 +59,9 @@ Development and execution of a document in which the writer describes his educat
 
 ***
 ## Education
-2022 - current time: Kharkiv Radio Technical College
-Pre-Junior C# .NET Full-stack course in Epam Systems
-Pre-Junior Java course in Epam Kids
+* 2022 - current time: Kharkiv Radio Technical College
+* Pre-Junior C# .NET Full-stack course in Epam Systems
+* Pre-Junior Java course in Epam Kids
 
 ***
 ## Languages
