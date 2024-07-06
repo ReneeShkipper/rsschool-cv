@@ -1,3 +1,161 @@
-h1 {
-    text-align: center;
+html {
+    font-family: 'Courier New', Courier, monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    display: grid;
+}
+
+header,
+footer {
+    background-color: #e8cb95;
+    display: grid;
+}
+
+.ending>a>img {
+    height: 50px;
+    padding-top: 5px;
+}
+
+.ending {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0%;
+    justify-items: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.main-menu {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 0;
+}
+
+.main-menu>li {
+    display: grid;
+    justify-content: center;
+}
+
+.main-menu>li>a,
+.git_link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #5e4c3d;
+    position: relative;
+}
+
+.main-menu>li>a::after,
+.ending>a:after {
+    content: "";
+    width: 10%;
+    height: 3px;
+    background: #5e4c3d;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 25px;
+    color: #5e4c3d;
+    opacity: 0;
+}
+
+.main-menu>li>a:hover::after,
+.ending>a:hover::after {
+    width: 100%;
+    transition-duration: 0.3s;
+    opacity: 1;
+}
+
+.main-menu>li>a:visited,
+.git_link:visited {
+    color: #7c7670;
+}
+
+.intro {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    background: linear-gradient(to left, #ffffff, #ffdd9e, #ffffff);
+}
+
+.intro>img {
+    width: 200px;
+    height: auto;
+    border-radius: 200px;
+    margin: 0px auto 20px auto;
+    border: #5e4c3d 2px solid;
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .main-menu {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main-menu>li>a {
+        padding-bottom: 10px;
+    }
+
+
+}
+
+.content>div {
+    border-left: #cf7e40 5px solid;
+    margin-left: 0 2%;
+    padding: 2%;
+}
+
+h2 {
+    padding-left: 20px;
+    border-left: #5e4c3d 5px solid;
+    background: linear-gradient(to right, #e8cb95, #ffffff);
+}
+
+h3 {
+    margin-bottom: 0%;
+}
+
+p {
+    text-indent: 30px;
+}
+
+pre {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    background-color: #f4e8da;
+}
+
+.description {
+    margin-top: 0%;
+}
+
+.link {
+    background-color: #cf9d77;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 30px;
+}
+
+.link:hover {
+    background-color: #5e4c3d;
+    color: #cf9d77;
+    padding: 11px 21px;
 }
